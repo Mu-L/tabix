@@ -1,65 +1,44 @@
-![Tabix Logo](http://ui.tabix.io/assets/images/logo2.png?123)
-
+![Tabix Logo](https://tabix.io/img/LogoTabix22Icon.png?utm_source=git)
 
 Open source simple business intelligence application and sql editor tool for Clickhouse.
-![Tabix](https://tabix.io/media/fullsceen.png)
-
 
 ## Install
 
-Not need, open in browser http://ui.tabix.io/
+Not need, open in browser http://dash.tabix.io/
 
 Alpha version : http://alpha.tabix.io
 
 
 ### If need install
 
-[Install to you host](https://tabix.io/doc/Install/)
+```bash
 
-[Use with Docker](https://tabix.io/doc/Install/#variant-5-from-docker)
+# git clone https://github.com/tabixio/tabix.git
+cd tabix
+git checkout master
 
-## Documentation
+# Install JS libs 
+yarn set version 3.1.1
+yarn -v
+echo "rm -Rf node_modules"
+rm -Rf node_modules/
+echo "yarn install"
+yarn install
 
-https://tabix.io/doc/
+# Run on http://0.0.0.0:9000/  
+yarn start
+
+# Build html+js to dir 
+yarn build:dev
 
 
-## Draw charts & map
-
-![Tabix](https://tabix.io/anime/draws.gif?gigig)
-
+```
 
 ## Requirements
 
-* Google Chrome version up 55 (chromium engine), not support FireFox & IE
 * Clickhouse server version up v1.1.54164
-* Not readonly CH user [note](https://tabix.io/doc/Requirements/#note)
-
-## Tabix repositories
-
-[Docs & articles](https://github.com/tabixio/tabix.docs)
-
-[Tabix.backend server](https://github.com/tabixio/tabix.backend)
-
-
-## Tabix changelog & news
-
-[Tabix changelog & news in twitter](http://twitter.com/tabix_io)
-
-[Tabix changelog in Docs](https://tabix.io/doc/Changelog/)
-
-## Roadmap
-
-[Tabix roadmap](https://tabix.io/doc/Roadmap/)
+* Not readonly Clickhouse user [note](https://tabix.io/doc/Requirements/#note)
 
 ## License
 
-Copyright 2018 Tabix LLC,Igor Strykhar and other contributors
-
-Licensed under the Apache License, Version 2.0
-
-Use components:
-* [Ace.JS](https://ace.c9.io/) Copyright (c) 2010, Ajax.org B.V.
-* [eCharts](https://github.com/ecomfe/echarts) Copyright (c) 2017, Baidu Inc.
-* [Handsontable](https://github.com/handsontable/handsontable)
-* [Lodash](https://github.com/lodash/lodash) Copyright JS Foundation
-* [pivottable](https://github.com/nicolaskruchten/pivottable)
+Copyright 2022 Tabix LLC Licensed under the Apache License, Version 2.0

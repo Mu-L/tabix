@@ -1,12 +1,33 @@
-bower_components
-node_modules
-.tmp
-coverage
-help
-manual/site
-# IntelliJ project files
-.idea
+# Output
+dist/
+*.log
+
+# Temp and caches
+node_modules/
+.cache/
+.awcache/
+.DS_Store
+*~
+
+# IDE
+.idea/
 *.iml
-out
-gen
-build
+.vscode/
+.history/
+
+# Remove after prepare project
+app/src/components/Handsontable/
+
+# Yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+
+# Grammars 
+grammar/output
