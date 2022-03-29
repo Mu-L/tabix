@@ -6,7 +6,6 @@ Open source simple business intelligence application and sql editor tool for Cli
 
 Not need, open in browser http://dash.tabix.io/
 
-Alpha version : http://alpha.tabix.io
 
 
 ### If need install
@@ -17,7 +16,7 @@ Alpha version : http://alpha.tabix.io
 cd tabix
 git checkout master
 
-# Install JS libs 
+# Install JS libs, if can`t install yarn 3, edit .yarnrc.yml remove line "yarnPath: .yarn/releases/yarn-3.1.1.cjs" 
 yarn set version 3.1.1
 yarn -v
 echo "rm -Rf node_modules"
